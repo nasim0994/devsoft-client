@@ -23,19 +23,21 @@ const Appointment = () => {
         </div>
       </div>
 
-      <div className="flex gap-4 justify-center items-center">
+      <div className="lg:flex gap-4 justify-center items-center">
         <p className="text-center text-primary font-semibold text-xl">
           Your Selected Date: {format(selectedDate, "PP")}.
         </p>
 
         {/* The button to open modal */}
-        <label
-          htmlFor="my-modal-3"
-          className="btn btn-primary"
-          onClick={() => setModal(selectedDate)}
-        >
-          Confirm Appointment
-        </label>
+        <div className="flex justify-center mt-3 lg:mt-0">
+          <label
+            htmlFor="my-modal-3"
+            className="btn btn-primary "
+            onClick={() => setModal(selectedDate)}
+          >
+            Confirm Appointment
+          </label>
+        </div>
         {modal && (
           <AppointmentModal
             selectedDate={selectedDate}

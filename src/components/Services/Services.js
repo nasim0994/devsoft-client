@@ -9,8 +9,8 @@ const Services = () => {
     <div className="my-5 bg-base-200 py-8">
       <h2 className="text-center text-3xl font-semibold">Our Services</h2>
 
-      <div className="flex gap-6 p-4">
-        <div className="lg:w-[33.33%] bg-white p-4 rounded-md shadow-md">
+      <div className="lg:flex gap-6 p-4">
+        <div className="lg:w-[33.33%] bg-white p-4 rounded-md shadow-md mb-3 lg:mb-0">
           <GiReceiveMoney className="text-5xl pb-2 text-red-500" />
           <Link>
             <h2 className="text-2xl font-semibold py-3">Financial Planning</h2>
@@ -20,7 +20,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="lg:w-[33.33%] shadow-md bg-white p-4 rounded-md">
+        <div className="lg:w-[33.33%] shadow-md bg-white p-4 rounded-md mb-3 lg:mb-0">
           <MdAnalytics className="text-5xl pb-2 text-red-500" />
           <Link>
             <h2 className="text-2xl font-semibold py-3">Project Analysis</h2>

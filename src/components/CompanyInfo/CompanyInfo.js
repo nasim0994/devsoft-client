@@ -5,8 +5,8 @@ import { BiPhoneCall } from "react-icons/bi";
 
 const CompanyInfo = () => {
   return (
-    <div className="flex gap-6 py-5">
-      <div className="w-[33.33%] flex items-center gap-4 bg-violet-500 p-6 rounded-lg text-white">
+    <div className="lg:flex gap-6 py-5">
+      <div className="lg:w-[33.33%] flex items-center gap-4 bg-violet-500 p-6 rounded-lg text-white mb-3 lg:mb-0">
         <div>
           <GoClock className="text-5xl" />
         </div>
@@ -16,7 +16,7 @@ const CompanyInfo = () => {
           <p>Sunday to wednesday</p>
         </div>
       </div>
-      <div className="w-[33.33%] flex items-center gap-4 bg-slate-600 p-6 rounded-lg text-white">
+      <div className="lg:w-[33.33%] flex items-center gap-4 bg-slate-600 p-6 rounded-lg text-white mb-3 lg:mb-0">
         <div>
           <MdLocationOn className="text-5xl" />
         </div>
@@ -26,7 +26,7 @@ const CompanyInfo = () => {
           <p>Dhaka, Bangladesh</p>
         </div>
       </div>
-      <div className="w-[33.33%] flex items-center gap-4 bg-cyan-500 p-6 rounded-lg text-white">
+      <div className="lg:w-[33.33%] flex items-center gap-4 bg-cyan-500 p-6 rounded-lg text-white">
         <div>
           <BiPhoneCall className="text-5xl" />
         </div>
