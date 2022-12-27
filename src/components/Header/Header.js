@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./Header.css";
 import { Link, NavLink } from "react-router-dom";
 import { AuthProvider } from "../../ContextApi/AuthContext";
+import { GrMenu, GrClose } from "react-icons/gr";
 
 const Header = () => {
   const { user, logout } = useContext(AuthProvider);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <header className="navbar bg-base-200">
@@ -16,7 +18,19 @@ const Header = () => {
         </div>
 
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
+          <button
+            onClick={() => setToggleMenu(!toggleMenu)}
+            className="lg:hidden text-3xl"
+          >
+            {toggleMenu ? <GrClose /> : <GrMenu />}
+          </button>
+          <ul
+            className={`menu menu-horizontal p-0 gap-1 absolute lg:flex lg:static z-50 ${
+              toggleMenu
+                ? "top-16 bg-base-200 right-0 w-full block"
+                : "top-[-150px]"
+            }`}
+          >
             <li>
               <NavLink
                 to="/home"
