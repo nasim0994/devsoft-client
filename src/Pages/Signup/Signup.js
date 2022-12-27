@@ -23,7 +23,6 @@ const Signup = () => {
         form.reset();
         toast.success("Signup Success");
         navigate("/login");
-        setMessage("");
       })
       .catch((error) => {
         console.log(error);
